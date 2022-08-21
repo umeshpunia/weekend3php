@@ -30,6 +30,7 @@ $get_users_query = mysqli_query($conn, $get_users_sql);
                     <th scope="col">Name</th>
                     <th scope="col">Email</th>
                     <th scope="col">Added On</th>
+                    <th scope="col">Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -43,6 +44,9 @@ $get_users_query = mysqli_query($conn, $get_users_sql);
                         <td><?=$get_users['name']?></td>
                         <td><?=$get_users['email']?></td>
                         <td><?=$get_users['add_on']?></td>
+                        <td>
+                            <a href="del.php?id=<?=$get_users['uid']?>" class="btn btn-danger">Delete</a>
+                        </td>
                     </tr>
 
                 <?php
