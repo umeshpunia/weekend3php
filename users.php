@@ -46,6 +46,7 @@ $get_users_query = mysqli_query($conn, $get_users_sql);
                         <td><?=$get_users['add_on']?></td>
                         <td>
                             <a href="del.php?id=<?=$get_users['uid']?>" class="btn btn-danger">Delete</a>
+                            <a href="edit.php?id=<?=$get_users['uid']?>" class="btn btn-info">Update</a>
                         </td>
                     </tr>
 

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="a">Click</button>
+    <input type="text" id="x">
+
+    <p>
+        Lorem ipsum dolor sit,<br> amet consectetur adipisicing elit. Totam minima dolores, voluptate veniam et iure, in qui illum maxime beatae magnam veritatis nulla amet ipsam, dignissimos laboriosam officiis voluptas dicta!
+    </p>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            
+            $("#a").click(function(){
+               var a= $("#x").val()
+               $("p").html(a)
+            })
+
+        })
+
+    </script>
+
+</body>
+</html>
